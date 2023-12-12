@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mos-Burgers</title>
+
+    <!--Boostrap css Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!--Custom css Link-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--boxicons link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,600;0,700;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    
+    <div class="container-fluid flex-grow-1">
+      <div class="row flex-nowrap">
+        <!-- Sidebar Content -->
+        <div class="bg-dark col-auto col-md-1 col-lg-1 col-sm-2 min-vh-100 d-flex flex-column justify-content-between">
+          <div class="bg-dark p-2">
+            <a class="d-flex text-decoration-none mt-1 align-items-center text-white">
+                <span class="fs-4 d-none d-sm-inline sidebar-logo">
+                    <img src="img/logo.png" alt="Mos Burgers Logo" width="100" height="80">
+                  </span>
+            </a>
+            <ul class="nav nav-pills flex-column mt-4">
+              <!-- Sidebar items go here... -->
+
+              <li class="nav-item py-2 py-sm-0 active" data-bs-toggle="tooltip" data-bs-placement="right" title="Home">
+                <a href="home.html" class="nav-link text-white active">
+                  <i class="fs-5 fa fa-house"></i>
+                </a>
+              </li>
+  
+              <li class="nav-item py-2 py-sm-0" title="Dashboard" data-bs-toggle="tooltip" data-bs-placement="right" >
+                <a href="#" class="nav-link text-white">
+                  <i class="fs-5 fa fa-gauge"></i>
+                </a>
+              </li>
+              
+              <li class="nav-item py-2 py-sm-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Store">
+                <a href="store.html" class="nav-link text-white">
+                  <i class="fs-5 fa fa-table-list"></i>
+                </a>
+              </li>
+              <li class="nav-item py-2 py-sm-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Orders">
+                <a href="#" class="nav-link text-white">
+                  <i class="fs-5 fa fa-clipboard"></i>
+                </a>
+              </li>
+              <li class="nav-item py-2 py-sm-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Customers">
+                <a href="#" class="nav-link text-white">
+                  <i class="fs-5 fa fa-user"></i>
+                </a>
+              </li>
+              <li class="nav-item py-2 py-sm-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Reports">
+                <a href="#" class="nav-link text-white">
+                  <i class="fs-5 fa fa-chart-bar"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown open p-3">
+            <button class="btn border-none dropdown-toggle text-white" type="button" id="triggerId" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-user"></i><span class="ms-2"></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <button class="dropsdown-item" href="#">Setting</button>
+              <button class="dropdown-item" href="#">Profile</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Main Content -->
+        
+        <div class="p-1 col-lg-11 d-flex flex-column">
+            <h1 class="logo"><span>M</span>os Burgers</h1>
+          <div class="p-2 row row-cols-1 row-cols-md-3 g-4 mt-4 ">
+            
+            <!-- Store Card -->
+            <div class="col-lg-4 col-md-8 col-sm-8">
+              <a href="store.html" class="card text-decoration-none">
+                <img src="placeholder-image.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h1 class="card-title text-center">Store</h1>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Place Order Card -->
+            <div class="col-lg-4 col-md-8 col-sm-8">
+              <a href="#" class="card text-decoration-none">
+                <img src="placeholder-image.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h1 class="card-title text-center">Place Order</h1>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Customers Card -->
+            <div class="col-lg-4 col-md-8 col-sm-8">
+              <a href="#" class="card text-decoration-none">
+                <img src="placeholder-image.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h1 class="card-title text-center">Customers</h1>
+                </div>
+              </a>
+            </div> 
+          
+            </div>
+            <div id="carouselExample" class="carousel slide col-lg-6 mx-auto p-3">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/burger3.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/burger4.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/burger4.jpg" class="d-block w-100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <div class="mt-auto">
+              <!-- Footer -->
+              <footer class="bg-dark text-white text-center py-2">
+                <div>
+                  <p>&copy; 2023 Mos Burgers. All rights reserved.</p>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>
